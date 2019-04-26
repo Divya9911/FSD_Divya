@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 15</title>
+</head>
+<body>
+	<p>Wikipedia is a free online <strong>encyclopedia</strong>, created and edited by volunteers around the world and hosted by the <strong>Wikimedia Foundation.</strong></p>
+
+	<button onclick="markBoldText()">Click here</button>
+	<script type="text/javascript">
+		function markBoldText()
+		{
+			var bold_item = document.getElementsByTagName('strong');
+			for(var i=0 ; i< bold_item.length ;i++ ){
+				bold_item[i].style.color="yellow";
+			}
+		}
+		
+	</script>
+</body>
+</html>
