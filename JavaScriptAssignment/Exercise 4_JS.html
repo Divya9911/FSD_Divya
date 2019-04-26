@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4</title>
+</head>
+<body>
+	<script>
+	var string=prompt("Enter a String");
+	initialCapital(string);
+
+	function initialCapital(str){
+
+		var str = str.toLowerCase().split(' ');
+		
+		for (var i = 0; i < str.length; i++) 
+		{
+			str[i] = str[i].charAt(0).toUpperCase()+str[i].substring(1);	
+		}
+	
+		console.log(str.join(' '));
+	}
+	</script>
+</body>
+</html>
