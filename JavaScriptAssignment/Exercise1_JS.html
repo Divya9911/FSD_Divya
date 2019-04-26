@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Checks input matches with random number or not</title>
+</head>
+<body>
+	<script>
+		//Taking a random number
+		var x=(Math.floor(Math.random()*10));
+		alert(x);
+		var y=prompt("Enter the number between 1 to 10");
+		if(x == y)//Comparing random number and input
+		{
+			alert("Right On!!");//executes when matched
+		}
+		else
+		{
+			alert("Unlucky!!");// executes when not matched
+		}
+	</script>
+</body>
+</html>
