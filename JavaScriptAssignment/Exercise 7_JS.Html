@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var string = prompt("Enter a String");
+		var substring = prompt("Enter a substring that you want to count ");
+		var c = countOccurence(string,substring);
+		alert("Substring comes "+ c +" times in a string");
+		function countOccurence(string,substring)
+		{
+		string = string.split(' ');
+		var count=0;
+		for(var i=0 ; i < string.length ;i++)
+		{
+			if(string[i] == substring)
+			{
+				count++;
+			}
+		}
+		return count;
+		}
+		
+	</script>
+
+</body>
+</html>
