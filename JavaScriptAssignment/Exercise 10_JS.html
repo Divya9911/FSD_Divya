@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 10</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Check whether the input is String or not
+	var myVar=prompt("Enter the value");
+
+	if(checkString(myVar))
+	{	
+		console.log("Input is string");
+		
+	}
+	else
+	{
+		console.log("Input is something else");
+	}
+	function checkString(myvar)
+	{
+		myvar = myvar.split('');
+		for(var i=0; i<myvar.length ;i++)
+		{
+			if(myvar[i]== '0' || myvar[i]== '1' ||myvar[i]== '2' ||myvar[i]== '3' ||myvar[i]== '4' ||myvar[i]== '5' ||myvar[i]== '6' ||myvar[i]== '7' ||myvar[i]== '8' ||myvar[i]== '9')
+			{
+				return false;
+				
+			}
+		}
+		return true;
+	}
+</script>
+</body>
+</html>
