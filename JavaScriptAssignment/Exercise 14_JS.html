@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 14</title>
+</head>
+<body>
+	<script>
+		var str = prompt("Please enter the string");
+		var initialStr = prompt("Enter the substring from that you want to String will start");
+		compareString(str,initialStr);
+		function compareString(str,initialStr){
+			str = str.split(" ");
+			if(str[0] == initialStr)
+			{
+				console.log("String starts with the specified string");
+			}
+			else{
+				console.log ("String start with some other word");
+			}
+		}
+	</script>
+</body>
+</html>
