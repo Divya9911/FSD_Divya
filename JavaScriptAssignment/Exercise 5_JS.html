@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Longest Word in String</title>
+</head>
+<body>
+	<button type="submit" onclick="findLongestWord()">Click Here</button>
+	<script>
+	function findLongestWord()
+	{
+		//var str="Program to find largest word in a string";
+		var str = prompt("Enter the string");
+		var strsplit=str.split(" ");
+		var longestword=0;
+		var word;
+		for(var i=0; i<strsplit.length;i++)
+		{
+			if(strsplit[i].length>longestword)
+			{
+				longestword = strsplit[i].length;
+				word = strsplit[i];
+			}
+		}
+		console.log(word);
+
+	}
+		
+	</script>
+	
+</body>
+</html>
