@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Chararacter provided in string is upper or not</title>
+</head>
+<body>
+	<script>
+		var str = prompt("Please enter the string");
+		var index = prompt("Enter the index");
+		charUpperAtindex(str,index);
+		function charUpperAtindex(str,index)
+		{
+		if(str.charCodeAt(index)>=65 && str.charCodeAt(index)<=90 ){
+
+			console.log("character at index "+index+ " is in upper case");
+		}
+		else
+		{
+			console.log("character at index "+index+ " is in lower case");
+		}
+		}
+	</script>
+
+</body>
+</html>
