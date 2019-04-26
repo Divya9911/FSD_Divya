@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 9</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr1 = ['1','2','3','4'];
+		var arr2 = ['3','4','7','8'];
+		var arr3 = [];
+		mergeElements(arr1,arr2);
+		function mergeElements(arr1,arr2)
+		{	
+			
+			//Merging array elements.
+			var arr3 = arr1.concat(arr2);
+			var n = arr3.length; 
+			// Remove dublicate element of the array
+			for(var i = 0; i < n; i++)
+    		{
+        		for(var j = i+1; j < n; )
+        		{
+            		if(arr3[j] == arr3[i])
+            		{
+                		for(var k = j; k < n; k++)
+                		{
+                    		arr3[k] = arr3[k+1];
+                		}
+                	n--;
+            		}
+            		else
+            		{
+                		j++;
+            		}
+        		}
+    		}
+
+			console.log(arr3);
+		}
+	</script>
+</body>
+</html>
