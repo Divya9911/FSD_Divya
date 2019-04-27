@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercise 8</title>
+<title>Exercise 8</title>
 </head>
 <body>
-	<script type="text/javascript">
+<script type="text/javascript">
 		var string = prompt("Enter the string");
 		string = string.split('');
-		var newstring = [0];
-		var k=0;
+		var newstring = '';
+		var count=0;
 		findRepeatElement(string);
+
 		function findRepeatElement(string)
+
 		{
 			for(var i = 0; i<string.length ; i++)
-			{
-				for(j=i+1 ; j < string.length ; j++)
-				{
-					if(string[i] == string[j])
-					{
-						newstring[k]=string[i];
-						k++;
-					}
-					
-				}
-			} 
-		console.log(newstring);
-		}
-		
-		
-	</script>
 
+			{
+				count=0;
+				for(var j = 0 ; j < string.length ; j++)
+
+				{
+
+					if(string[i] === string[j])
+
+					{
+						count=count+1;
+
+					}
+
+				}
+					if(count < 2){
+						newstring = newstring+string[i];
+						
+					} 
+			}
+		console.log(newstring);
+
+		}
+
+</script>
 </body>
-</html>>
+</html>
