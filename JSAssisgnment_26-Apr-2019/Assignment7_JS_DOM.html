@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 7</title>
+</head>
+<body>
+	<select id ="mySelect">
+		<option> Select any one city </option>
+		<option id="Knp">Kanpur</option>
+		<option id="Lko">Lucknow</option>
+		<option id="Guj">Gujrat</option>
+		<option id="Kol">Kolkata</option>
+	</select>
+	<button onclick = "myFunction()"> Click here </button>
+	<script type="text/javascript">
+		var input =prompt("Enter the value");
+		function myFunction(){
+			var dropdown = document.getElementById("mySelect");
+			for(var i = 0;i < dropdown.options.length ;i++)
+			{
+				if(dropdown.options[i].value == input){
+					dropdown.removeChild(dropdown.options[i]);
+					break;
+				}
+			}
+
+		}
+	</script>
+ 
+</body
+</html>
