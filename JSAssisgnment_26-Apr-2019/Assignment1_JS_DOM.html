@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Click the button to see the date and time when the document is last modified</p>
+	<button onclick = "myFunction()">Click here to see time</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var x = document.lastModified;
+			document.getElementById("demo").innerHTML = x ;
+		}
+	</script>
+
+</body>
+</html>
