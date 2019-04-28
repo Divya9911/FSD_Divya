@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body id="demo">
+<p> This is Assignment 2 of Javascript</p>
+<button onclick="myFunction()">Click here</button>
+<script>
+	function myFunction(){
+	var x = prompt("Enter the value with you want to replace the content of body.");
+	document.getElementById("demo").innerHTML = x;
+	}
+</script>
+</body>
+</html>
