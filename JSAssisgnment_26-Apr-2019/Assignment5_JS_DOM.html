@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5</title>
+</head>
+<body>
+<select id ="mySelect">
+	<option>Select any one city</option>
+	<option>Kanpur</option>
+	<option>Delhi</option>
+	<option>Banglore</option>
+	<option>Pune</option>
+</select><br>
+<br>
+<button onclick = "makeDisable()"> Click for Disable Dropdown</button>
+
+<script>
+	function makeDisable(){
+		var x = document.getElementById("mySelect");
+		x.disabled = true;
+	}
+</script>
+</body>
+</html>
