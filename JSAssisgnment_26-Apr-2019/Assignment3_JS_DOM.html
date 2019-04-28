@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+</head>
+<body>
+	<a href="Event.html" id="myAnchor">Event Page</a>
+	<a href="https://w3school.com" id="myAnchor">W3 School.com</a>
+	<a href="https://wikipedia"> Wikipedia </a>
+	<p id = "demo"> Click the button to get the value of last anchor tag.</p>
+	<button onclick = "myFunction()"> Click here</button>
+	<script>
+		function myFunction(){
+		var links = document.getElementsByTagName('a'),hrefs = [];
+		document.getElementById("demo").innerHTML = links[links.length-1];
+	}
+	</script>
+</body>
+</html>
