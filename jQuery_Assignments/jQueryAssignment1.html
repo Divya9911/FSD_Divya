@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<p id ="paraSampleText">
+	Some Content here!!
+</p>
+<button>Click here to append the text</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#paraSampleText").append("New contend is appended");
+		});
+	});
+</script>
+</body>
+</html>
