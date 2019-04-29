@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		.div1{
+			background-color:yellow;
+			color : red;
+			}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		Inside a first div tag.
+	</div>
+	<div class="div1">
+		Inside a second div.
+	</div>
+	<button>Delete CSS</button>
+	<script>
+		$(document).ready(function(){
+			$("div").click(function(){
+				$(this).removeClass("div1");
+			})
+
+		})
+	</script>
+
+</body>
+</html>
