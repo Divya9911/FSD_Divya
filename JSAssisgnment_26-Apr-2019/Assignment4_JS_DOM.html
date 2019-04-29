@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Assignment 4</title>
+<script src="js/imageToggle.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style type="text/css">
+#toggleThisImage{
+transition: 1s all ease;
+}
+</style>
+</head>
+<body>
+<div style="width: 35%; border-radius: 10px;">
+	<img id="toggleThisImage" src="Nature1.jpg" alt="No image found!">
+	<button onclick="imageToggle('toggleThisImage');">Toggle</button>
+</div>
+<script type="text/javascript">
+showImage = true;
+width_1 = document.getElementById('toggleThisImage').width + "px";
+function imageToggle(toggleThisImage)	{
+if(showImage == true)	{
+document.getElementById(toggleThisImage).style.height = '0px';
+showImage = false;
+}
+else {
+document.getElementById(toggleThisImage).style.height = width_1;
+showImage = true;
+}
+}
+</script>
+</body>
+</html>
