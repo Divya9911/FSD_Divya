@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jqueryAssignment2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		This is first div.
+	</div>
+	<div>
+		This is second div.
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			$("div").each(function(){
+				var text =$(this).text();
+				var splitText = text.split(' ');
+				var x ="<strong>"+splitText[1]+"</strong>"
+				splitText[1] = x;
+				$(this).html(splitText.join(' '));
+				//console.log($("div span:nth-child(2)").text());//.css("font-weight","bold");
+			});
+		});
+
+	</script>
+
+</body>
+</html>
