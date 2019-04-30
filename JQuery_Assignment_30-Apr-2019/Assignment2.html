@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Limit words in textfield</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <input id="name" type="text" name='uname' placeholder="Enter name" maxlength="20" onkeypress="textValidate()"></input>
+    <br><span id="s"></span>
+    <script type="text/javascript">
+    function textValidate(){
+       var input=document.getElementById("name").value;
+       var n = input.length;
+       //var n=n+1;
+       var k=20;
+       if(n<k)
+         {
+           n=k-n;
+          // console.log(n + "characters are remaining");
+           document.getElementById("s").innerHTML = n-1 +"Characters are remaining";
+         }
+         else {
+            document.getElementById("s").innerHTML = "out of characters";
+         }
+       }
+
+      /*function textValidate(){
+      var input = $(this).text();
+      var n = input.length;
+      for( var i=n ; i<20 ;i++){
+        $("#s").text(20-i +"Characters are remaining");
+        break;
+      }
+    }
+
+        $(document).ready(function(){
+          function textValidate(){
+          var input = $(this).text();
+          var n = input.length;
+          alert(n);
+          for( var i=n ; i<20 ;i++){
+            $("#s").text("Characters are remaining");
+          }
+        }*/
+
+
+
+    </script>
+  </body>
+</html>

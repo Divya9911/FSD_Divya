@@ -4,20 +4,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Delete all the spans in the document</title>
+  <title>Set the focus to the first input box of form.</title>
   </head>
   <body>
-    <p> Program  is for removing all the spans from html document.</p>
-    <span onclick="click()"> This is first span tag.</span>
-    <br>
-    <span> This is second span tag.</span><br>
-    <span> This is third span tag.</span><br>
+    <form class="form-group">
+    <label>Name</label>
+      <input type="text" class="form-control" id="name"s>
+      <label>Password</label>
+      <input type="password" class ="form-control">
+    </form>
+
     <script>
       $(document).ready(function(){
-        $("span").click(function(){
-          $("span").remove();
-        })
-
+        $("#name").focus();
       })
       </script>
 

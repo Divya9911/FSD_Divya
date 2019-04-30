@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check if windows is open/closed on button click</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="message"></div>
+<button onclick="openWindow()">Open Window</button>
+<button onclick="closeWindow()">Close Window</button>
+<button onclick="checkWindow()">Check if it ever opened</button>
+<script type="text/javascript">
+var windowStatus;
+function openWindow()	{
+		windowStatus = window.open("https://www.google.com", "_blank", "width=640, height=360");
+		}
+function closeWindow()	{
+		windowStatus.close();
+		}
+function checkWindow()	{
+		if(!window)	{
+			document.getElementById("message").innerHTML = "Window was never opened"
+		}
+		else	{
+			document.getElementById("message").innerHTML = "Window was opened");
+		}
+}
+</script>
+</body>
+</html>

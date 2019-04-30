@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delay in subsequence items in the animation Queue.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <img src="Scating.jpg" height="100px" width="100px"></img>
+    <button id="abutton">Animate in queue</button>
+    <script>
+      $(document).ready(function(){
+        $("#abutton").click(function(){
+          $('img').animate({height:'300px'},'slow').delay(2000);
+          $('img').animate({opacity:0.2},'slow').delay(2000);
+          $('img').animate({width:'300px'},'slow');
+        });
+      });
+    </script>
+  </body>
+</html>

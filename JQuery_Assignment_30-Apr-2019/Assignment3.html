@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Remove an element from one div to other</title>
+  </head>
+  <body>
+    <div id="source" style="height:200px; background-color:lightblue">
+    <p id="para"> Program  is for removing all the spans from html document.</p>
+    <span> This is first span tag.</span>
+    </div>
+    <div id="target" style="background-color:yellow; height:200px">
+      <p> This is second div.</p>
+    </div>
+    <button>Click Here</button>
+    <script>
+      $(document).ready(function(){
+        $("p").click(function(){
+          //("#target").append($(#source).detach());
+          //console.log($("#target").append($("#para").text()));
+          //$('#source *').hide();
+          $(this).detach().appendTo("#target");
+        })
+
+      })
+      </script>
+
+  </body>
+  </html>
