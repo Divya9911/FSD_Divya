@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Delay in subsequence items in the animation Queue.</title>
+    <title>On right click inside div make div large.</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
 
-    <img src="Scating.jpg" height="100px" width="100px"></img>
-
+      <div style="background-color:yellow;height:300px;width:300px">
+    </div>
     <script>
       $(document).ready(function(){
-        $('img').mousedown(function(event) {
+        $('div').mousedown(function(event) {
           if(event.which == 3)
           {
-            $('img').animate({height:'300px', width:'300px'},'slow');
+            $('div').animate({height:'500px', width:'500px'},'slow');
           }
-    /*switch (event.which) {
-        case 1:
-          //alert('Left mouse button is pressed');
-            break;
-        case 2:
-            //alert('Middle mouse button is pressed');
-            break;
-        case 3:
-            alert('Right mouse button is pressed');
-            $('img').animate({height:'300px', width:'300px'},'slow')
-            break;
-        default:
-            alert('Nothing');
-    }*/
   });
       });
     </script>
