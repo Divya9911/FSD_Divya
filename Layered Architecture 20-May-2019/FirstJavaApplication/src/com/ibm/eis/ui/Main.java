@@ -10,9 +10,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		EmployeeServiceInterface service =new EmployeeServiceClass();
-		/*Employee emp1 =new Employee(1,"A",2000,"Clerk");
-		Employee emp2 =new Employee(3,"B",5000,"Project Manager");
-		Employee emp3 =new Employee(2,"C",8000,"Manager");*/
 		
 		Scanner sc = new Scanner(System.in);
 		int id;
@@ -45,14 +42,7 @@ public class Main {
 		
 		service.storeIntoMap(id,emp);
 		service.findInsuaraceScheme(emp);
-		//emp.setInsuaranceScheme(insuaranceScheme);
-		//System.out.println("Employee Details are");
-		//System.out.println(emp1);
-		//System.out.println("Calling this fn");
 		
-		//service.storeIntoMap(emp1,emp2,emp3);
-		
-		//service.findInsuaraceScheme(emp1);
 		System.out.println("Display the employee details");
 		System.out.println(service.EmpDetails());
 		}
