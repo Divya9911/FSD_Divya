@@ -13,9 +13,8 @@ public class EmployeeDaoClass implements EmployeeDaoInterface{
 	public void storeIntoMap(int id, Employee emp) {
 		// TODO Auto-generated method stub
 		int sal = emp.getSalary();
-		//System.out.println(sal);
 		String designation = emp.getDesignation();
-		//System.out.println(designation);
+		
 		if(sal>5000 && sal<20000 && designation.equals("System Associate")) {
 			emp.setInsuaranceScheme("Scheme A");
 			
@@ -45,11 +44,9 @@ public class EmployeeDaoClass implements EmployeeDaoInterface{
 
 	@Override
 	public void findInsuaranceScheme(Employee emp) {
-		// TODO Auto-generated method stub
 		int sal = emp.getSalary();
-		//System.out.println(sal);
 		String designation = emp.getDesignation();
-		//System.out.println(designation);
+		
 		if(sal>5000 && sal<20000 && designation.equals("System Associate")) {
 			emp.setInsuaranceScheme("Scheme A");
 			
