@@ -8,19 +8,11 @@ import com.ibm.eis.bean.Employee;
 import com.ibm.eis.dao.EmployeeDaoClass;
 
 public class EmployeeServiceClass implements EmployeeServiceInterface {
-
-	//Map<Integer,Employee> hmap = new HashMap();
 	EmployeeDaoClass dao = new EmployeeDaoClass();
 	String str ="";
 	@Override
-	/*public void storeIntoMap(Employee emp1,Employee emp2, Employee emp3) {
-		hmap.put(1,emp1);
-		hmap.put(2,emp2); 
-		hmap.put(3,emp3);
-	}*/
 	public void storeIntoMap(int id, Employee emp) {
 		dao.storeIntoMap(id,emp);
-		//hmap.put(id, emp);
 	}
 	
 	@Override
